@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="page-header">Profile</h1>
+<div class="container profile_container">
+    <div class="profile-img">
+        <img src="{{url_for( 'static', filename='no-image.jpg' ) }}" class="img-responsive img-thumbnail"/>
+    </div>
+    <div class="profile-info">
+        <h4>Daniel Dawson</h4>
+        
+        <div class="info-data">
+            <span>Todays date is {{ current_time }}</span><hr>
+            <span>
+                <strong>Username: </strong>John Doe
+            </span><br>
+            <span>
+                <strong>ID Number: </strong>620012345
+            </span><br>
+            <span>
+                <strong>Age: </strong>21
+            </span><br>
+            <span>
+                <strong>Gender: </strong>Male
+            </span><hr>
+            
+            <span>I am anonymous</span>
+                
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
